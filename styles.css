@@ -653,22 +653,110 @@ body {
 
 /* Footer */
 .footer {
-    padding: 2rem;
+    padding: 4rem 2rem 2rem;
     background-color: var(--dark-bg);
-    text-align: center;
-    color: var(--text-light);
-    font-size: 0.9rem;
     border-top: 1px solid var(--border-color);
 }
 
-.footer p {
-    margin: 0.5rem 0;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-.footer-tech {
+.footer-section h3.footer-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent-yellow);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-tagline {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.footer-social a:hover {
+    color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    transform: translateY(-3px);
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    color: var(--accent-yellow);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent-yellow);
+    padding-left: 0.5rem;
+}
+
+.footer-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.footer-tech-grid span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-tech-note {
     color: var(--text-gray);
     font-size: 0.85rem;
-    margin-top: 0.5rem;
 }
 
 /* Animations */

@@ -30,10 +30,10 @@
             <div class="hero-divider"></div>
             <h2 class="hero-subtitle">DevOps Engineer</h2>
             <p class="hero-description">
-                DevOps Engineer with practical experience in building and automating 
-                secure infrastructure across AWS and on-prem environments. Skilled in 
-                containerization using Docker and Kubernetes, Infrastructure as code with 
-                Terraform and Ansible, and CI/CD pipelines with GitHub Actions and ArgoCD.
+                DevOps Engineer specializing in cloud-native infrastructure on AWS EKS, 
+                GitOps workflows with ArgoCD, and end-to-end CI/CD automation. Experienced in 
+                containerization with Docker and Kubernetes, Infrastructure as Code with 
+                Terraform and Ansible, and production-grade monitoring with Prometheus, Grafana, and the ELK stack.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">
@@ -45,7 +45,7 @@
                 <a href="https://github.com/alexmachulsky" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/alex-machulsky-" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/alex-machulsky-/" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="mailto:alexm051197@gmail.com" aria-label="Email">
@@ -54,6 +54,7 @@
             </div>
             <div class="tech-badges">
                 <span class="badge">AWS</span>
+                <span class="badge">EKS</span>
                 <span class="badge">Docker</span>
                 <span class="badge">Kubernetes</span>
                 <span class="badge">Terraform</span>
@@ -61,6 +62,7 @@
                 <span class="badge">GitHub Actions</span>
                 <span class="badge">ArgoCD</span>
                 <span class="badge">Python</span>
+                <span class="badge">Helm</span>
             </div>
         </div>
     </section>
@@ -72,32 +74,32 @@
             <div class="section-divider"></div>
             <div class="about-content">
                 <p class="about-text">
-                    I am a DevOps Engineer with expertise in cloud infrastructure automation and modern deployment 
-                    practices. My focus lies in building scalable, resilient systems that enable teams to deliver 
-                    software efficiently and reliably.
+                    DevOps Engineer from Israel with hands-on experience designing and operating production 
+                    infrastructure on AWS. I build end-to-end deployment pipelines — from provisioning EKS 
+                    clusters with Terraform to shipping containerized workloads through GitOps workflows 
+                    powered by ArgoCD.
                 </p>
                 <p class="about-text">
-                    With hands-on experience in containerization technologies like Docker and Kubernetes, I design 
-                    and implement CI/CD pipelines that streamline development workflows. My proficiency with 
-                    Infrastructure as Code tools, particularly Terraform and Ansible, allows me to manage AWS 
-                    resources systematically across both cloud and on-prem environments.
+                    My day-to-day work spans Docker, Kubernetes, Helm, and CI/CD automation with GitHub Actions 
+                    and Jenkins. I manage secrets with AWS Secrets Manager and External Secrets Operator, enforce 
+                    security scanning with Trivy, and keep systems observable through Prometheus, Grafana, and 
+                    the ELK stack (Elasticsearch, Fluent Bit, Kibana).
                 </p>
                 <p class="about-text">
-                    I am committed to implementing industry best practices for monitoring, security, and deployment 
-                    automation using tools like Prometheus, Grafana, and the EFK stack, while maintaining high 
-                    standards for system reliability and performance optimization. Passionate about bridging operations 
-                    and automation to deliver production-ready systems while continuously learning and improving 
-                    through real-world projects.
+                    I thrive on turning complex manual processes into repeatable, automated solutions — whether 
+                    that means standing up a full-stack application on EKS, building intelligent chatbots with 
+                    local LLMs, or creating fitness analytics platforms. Every project I ship is containerized, 
+                    monitored, and deployed through a proper CI/CD pipeline.
                 </p>
             </div>
             <div class="specialization">
                 <div class="spec-item">
                     <span class="spec-label">SPECIALIZATION</span>
-                    <span class="spec-value">Cloud Infrastructure</span>
+                    <span class="spec-value">Cloud-Native Infrastructure & GitOps</span>
                 </div>
                 <div class="spec-item">
                     <span class="spec-label">PLATFORM</span>
-                    <span class="spec-value">Amazon Web Services</span>
+                    <span class="spec-value">AWS · EKS · Kubernetes</span>
                 </div>
             </div>
         </div>
@@ -117,7 +119,7 @@
                     </div>
                     <h3 class="skill-title">Cloud & Infrastructure</h3>
                     <ul class="skill-list">
-                        <li>AWS</li>
+                        <li>AWS (EKS, EC2, S3, Route53, Secrets Manager)</li>
                         <li>Terraform</li>
                         <li>Ansible</li>
                     </ul>
@@ -186,8 +188,8 @@
                     <ul class="skill-list">
                         <li>Prometheus</li>
                         <li>Grafana</li>
-                        <li>Zabbix</li>
-                        <li>EFK Stack</li>
+                        <li>ELK Stack (Elasticsearch, Kibana)</li>
+                        <li>Fluent Bit</li>
                     </ul>
                 </div>
             </div>
@@ -207,37 +209,35 @@
                 <!-- Project 1 - Blackjack -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=800&h=500&fit=crop" alt="Blackjack Application">
-                        <span class="project-tag">Full Stack</span>
+                        <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=800&h=500&fit=crop" alt="Blackjack Game on AWS">
+                        <span class="project-tag">DevOps</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Blackjack Card Game Application</h3>
+                        <h3 class="project-title">Blackjack Game on AWS</h3>
                         <p class="project-description">
-                            A full-stack web application featuring containerized deployment with Docker and Kubernetes orchestration. 
-                            The project demonstrates cloud-native development, infrastructure automation with Terraform, 
-                            and complete CI/CD pipelines using GitHub Actions and ArgoCD for GitOps deployments. Includes comprehensive 
-                            logging and monitoring with EFK stack (Elasticsearch, Fluent Bit, Kibana), Prometheus, and Grafana.
+                            A comprehensive DevOps project that deploys an interactive Python Flask blackjack game to AWS EKS 
+                            using enterprise-grade tooling. Infrastructure is provisioned with Terraform, containers are orchestrated 
+                            with Kubernetes and Helm, and deployments follow a GitOps workflow through ArgoCD. Secrets are managed 
+                            via AWS Secrets Manager with External Secrets Operator, and the full observability stack includes 
+                            Prometheus, Grafana, Elasticsearch, Fluent Bit, and Kibana. MongoDB serves as the data layer.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Python Flask</span>
+                            <span class="tech-tag">AWS EKS</span>
+                            <span class="tech-tag">Terraform</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Helm</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">GitHub Actions</span>
                             <span class="tech-tag">ArgoCD</span>
+                            <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Prometheus</span>
                             <span class="tech-tag">Grafana</span>
-                            <span class="tech-tag">EFK Stack</span>
-                            <span class="tech-tag">Nginx</span>
-                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">ELK Stack</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">NGINX Ingress</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/alexmachulsky" target="_blank" class="project-link">
+                            <a href="https://github.com/alexmachulsky/blackjack-devops-project" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
                             </a>
                         </div>
                     </div>
@@ -247,17 +247,16 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=500&fit=crop" alt="AI ChatBot">
-                        <span class="project-tag">AI/ML</span>
+                        <span class="project-tag">AI / DevOps</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">AI ChatBot Assistant</h3>
+                        <h3 class="project-title">AI ChatBot</h3>
                         <p class="project-description">
-                            An intelligent AI-powered chatbot that can assist with any topic - from technology and science to business 
-                            and everyday questions. Built with Flask and Ollama (local LLM), this project demonstrates modern AI integration 
-                            with containerized microservices architecture. Features include real-time chat interface with glassmorphism design, 
-                            conversation history, Docker Compose orchestration with Ollama server, Kubernetes manifests for production deployment, 
-                            and comprehensive CI/CD pipeline with security scanning. Runs completely locally with no external API dependencies 
-                            using Llama 3.1 8B model for high-quality responses.
+                            An AI-powered chatbot running 100 % locally with Ollama and Llama 3.1 8B — no external API keys required. 
+                            Features streaming responses, a document-grounded RAG mode, optional Google web lookup, and a switchable 
+                            model picker. The Flask backend is served by Gunicorn, orchestrated with Docker Compose alongside the Ollama 
+                            server, and deployable to Kubernetes with liveness/readiness probes and rolling updates. A GitHub Actions 
+                            pipeline lints, builds, scans with Trivy, and publishes container images.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -265,12 +264,10 @@
                             <span class="tech-tag">Ollama</span>
                             <span class="tech-tag">Llama 3.1 8B</span>
                             <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Docker Compose</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">GitHub Actions</span>
                             <span class="tech-tag">Trivy</span>
                             <span class="tech-tag">Gunicorn</span>
-                            <span class="tech-tag">HTML/CSS/JS</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/alexmachulsky/ai-chatbot" target="_blank" class="project-link">
@@ -286,33 +283,34 @@
                 <!-- Project 3 - Gym App -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=500&fit=crop" alt="Gym Application">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=500&fit=crop" alt="Smart Gym Progress Tracker">
                         <span class="project-tag">Full Stack</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Gym Management Application</h3>
+                        <h3 class="project-title">Smart Gym Progress Tracker</h3>
                         <p class="project-description">
-                            A comprehensive gym management and fitness tracking application featuring containerized deployment 
-                            with Docker and Kubernetes. The project showcases modern DevOps practices including Infrastructure 
-                            as Code with Terraform, automated CI/CD pipelines, and production-grade monitoring solutions. 
-                            Built to streamline gym operations, member management, and workout tracking while demonstrating 
-                            enterprise-level deployment strategies and cloud-native architecture patterns.
+                            A production-grade fitness analytics platform built in phases with a DevOps-first approach. 
+                            React (Vite) frontend paired with a FastAPI backend and PostgreSQL database. Features JWT 
+                            authentication, multi-set workout logging, body-weight tracking, and progression intelligence 
+                            (volume, estimated 1RM, plateau detection). Containerized with Docker Compose, tested with 
+                            pytest, and published to GHCR via GitHub Actions. Phase 3 adds Terraform-provisioned AWS EKS 
+                            and Kubernetes manifests for full cloud deployment.
                         </p>
                         <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">AWS EKS</span>
                             <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">GHCR</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/alexmachulsky/gym-app" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
                             </a>
                         </div>
                     </div>
@@ -338,9 +336,9 @@
                     <i class="fab fa-github"></i>
                     github.com/alexmachulsky
                 </a>
-                <a href="https://www.linkedin.com/in/alex-machulsky-" target="_blank" class="contact-link">
+                <a href="https://www.linkedin.com/in/alex-machulsky-/" target="_blank" class="contact-link">
                     <i class="fab fa-linkedin"></i>
-                    linkedin.com/in/alex-machulsky-
+                    linkedin.com/in/alex-machulsky
                 </a>
             </div>
         </div>
@@ -352,12 +350,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-name">Alex Machulsky</h3>
-                    <p class="footer-tagline">DevOps Engineer passionate about building scalable infrastructure and automating deployments.</p>
+                    <p class="footer-tagline">DevOps Engineer specializing in AWS EKS, GitOps, and end-to-end infrastructure automation.</p>
                     <div class="footer-social">
                         <a href="https://github.com/alexmachulsky" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/alex-machulsky-" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/alex-machulsky-/" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:alexm051197@gmail.com" aria-label="Email">
@@ -379,20 +377,20 @@
                 <div class="footer-section">
                     <h4 class="footer-heading">Technologies</h4>
                     <div class="footer-tech-grid">
-                        <span>AWS</span>
+                        <span>AWS / EKS</span>
                         <span>Docker</span>
                         <span>Kubernetes</span>
                         <span>Terraform</span>
+                        <span>ArgoCD</span>
                         <span>GitHub Actions</span>
                         <span>Prometheus</span>
                         <span>Grafana</span>
-                        <span>Jenkins</span>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Alex Machulsky. All rights reserved.</p>
+                <p>&copy; 2026 Alex Machulsky. All rights reserved.</p>
                 <p class="footer-tech-note">Built with HTML, CSS, and JavaScript. Containerized with Docker & Nginx. Hosted on GitHub Pages.</p>
             </div>
         </div>

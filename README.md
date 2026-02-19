@@ -81,7 +81,7 @@ A modern, responsive portfolio website showcasing DevOps skills and projects, bu
 ## 📋 Technical Skills Showcased
 
 ### Cloud & Infrastructure
-- AWS (EC2, S3, CloudFront, Route53, Lambda, RDS)
+- AWS (EKS, EC2, S3, CloudFront, Route53, Secrets Manager, Lambda, RDS)
 - Infrastructure as Code (Terraform)
 
 ### Containerization & Orchestration
@@ -92,7 +92,7 @@ A modern, responsive portfolio website showcasing DevOps skills and projects, bu
 ### CI/CD & Automation
 - GitHub Actions
 - Jenkins
-- ArgoCD
+- ArgoCD (GitOps)
 
 ### Configuration Management
 - Ansible
@@ -106,6 +106,7 @@ A modern, responsive portfolio website showcasing DevOps skills and projects, bu
 ### Monitoring & Logging
 - Prometheus
 - Grafana
+- ELK Stack (Elasticsearch, Kibana, Fluent Bit)
 
 ## 🏗️ Project Structure
 
@@ -193,7 +194,7 @@ docker rm portfolio
 ## 📧 Contact
 
 - **Email**: alexm051197@gmail.com
-- **LinkedIn**: [Alex Machulsky](https://www.linkedin.com/in/alex-machulsky-)
+- **LinkedIn**: [Alex Machulsky](https://www.linkedin.com/in/alex-machulsky-/)
 - **GitHub**: [alexmachulsky](https://github.com/alexmachulsky)
 
 ## 📄 License
